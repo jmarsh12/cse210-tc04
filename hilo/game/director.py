@@ -1,3 +1,6 @@
+from game.dealer import dealer
+
+
 class Director:
     '''
     
