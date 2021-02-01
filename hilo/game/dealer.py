@@ -17,8 +17,13 @@ class Dealer:
         self.card.append(result)
         self.num_draw += 1
         
-    def determine_points(self):
+    def determine_points(self, choice, card_drawn, old_card):
+        points_scored = 0
+        if ((choice == 'h' or choice == 'H') and card_drawn > old_card) or ((choice == 'l' or choice == 'L') and card_drawn < old_card):
+            points_scored = 100
+        else:
+            points_scored = -75
+        return points_scored
         # TODO pass draw_card value into determine points, return number of points (if and else statement)
         # TODO get_last_card, is_last_card_higher, is_last_card_lower
         # TODO if correct, add 100 points, if incorrect lose 75 points
-        pass
