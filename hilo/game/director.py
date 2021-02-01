@@ -7,13 +7,7 @@ class Director:
     '''
 
     def __init__(self):
-    
-
-    def start_game(self):
-        # TODO get inputs(higher/lower), do updates, do outputs
-        print('hi')
-        play_again()
-        
+                
 
     def points(self):
         # TODO compute points/track points

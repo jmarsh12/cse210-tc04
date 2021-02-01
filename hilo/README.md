@@ -2,7 +2,6 @@
 
 Terms:
 Director class
-    start_game
     points
     play_again
     get_choice
