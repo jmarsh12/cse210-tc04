@@ -7,16 +7,21 @@ class Director:
     '''
 
     def __init__(self):
-                
-
-    def points(self):
+        self.points = 0
+        pass
+    
+    def points(self, choice):
         # TODO compute points/track points
+        if choice == 'h' or choice == 'H':
+            self.points += 100
+        else:
+            self.points -= 75
         pass
 
     def play_again(self):
         # TODO ask to play again, determine if the player can play again
         play_again = input("Do you want to play again? y/n")
-        if play_again == "y"
+        if play_again == "y":
             get_choice()
         else:
             exit()
