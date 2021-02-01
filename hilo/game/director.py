@@ -16,7 +16,7 @@ class Director:
     def play_again(self):
         # TODO ask to play again, determine if the player can play again
         play_again = input("Do you want to play again? y/n")
-        if play_again == "y":
+        if play_again == "y"
             get_choice()
         else:
             exit()
@@ -25,7 +25,8 @@ class Director:
     def get_choice(self):
         print('The card is {card}')
         choice = input("Higher or Lower [h/l]")
-        return choice
+        if choice == 'h' or choice == 'H':
+            return choice
         # TODO get user input 
         # TODO figure out how to connect if the user's number is higher or lower than the card value
         pass
