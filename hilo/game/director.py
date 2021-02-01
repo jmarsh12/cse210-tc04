@@ -39,11 +39,3 @@ class Director:
                 print("Please choose an h/H or an l/L")
         # TODO get user input 
         # TODO figure out how to connect if the user's number is higher or lower than the card value
-        pass
-    pass
-
-    
-    # start_game
-    # points
-    # play_again
-    # get_choice

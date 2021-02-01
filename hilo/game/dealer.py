@@ -22,5 +22,3 @@ class Dealer:
         # TODO get_last_card, is_last_card_higher, is_last_card_lower
         # TODO if correct, add 100 points, if incorrect lose 75 points
         pass
-
-    pass
