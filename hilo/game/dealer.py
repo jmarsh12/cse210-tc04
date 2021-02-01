@@ -2,7 +2,8 @@ import random
 
 class Dealer:
     '''
-    
+    The dealer class will deal a card between 1 and 13, and it will compute the
+    points from the user's input.
     '''
 
     def __init__(self):

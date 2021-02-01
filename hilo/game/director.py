@@ -3,7 +3,8 @@ from game.dealer import Dealer
 
 class Director:
     '''
-    
+    The director class will start the game, allows the user to play again,
+    and it gets the choice of the user.
     '''
 
     def __init__(self):
