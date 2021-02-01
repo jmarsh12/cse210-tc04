@@ -8,6 +8,7 @@ class Director:
     '''
 
     def __init__(self):
+        self.dealer = Dealer()
         self.points = 0        
 
     def points(self, choice):
@@ -28,7 +29,7 @@ class Director:
       
 
     def get_choice(self):
-        print('The card is {card}')
+        print(f'The card is {self.dealer.get_last_card()}')
         condition = True
         while(condition):
             choice = input("Higher or Lower [h/l]")
