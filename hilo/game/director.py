@@ -12,9 +12,9 @@ class Director:
     def points(self, choice):
         # TODO compute points/track points
         if choice == 'h' or choice == 'H':
-            self.choice += 100
+            self.points += 100
         else:
-            self.choice -= 75
+            self.points -= 75
         
 
     def play_again(self):
