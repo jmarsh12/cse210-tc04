@@ -1,5 +1,5 @@
 import sys
-from game.dealer import Dealer
+# from game.dealer import Dealer
 
 class Director:
     '''
@@ -13,11 +13,8 @@ class Director:
 
     def points(self, choice):
         # TODO compute points/track points
-        if choice == 'h' or choice == 'H' or choice == 'l' or choice == 'L':
-            self.points += 100
-        else:
-            self.points -= 75
-        
+        total_points = (total_points + determine_points(self, choice, card_drawn, old_card))
+                
 
     def play_again(self):
         # TODO ask to play again, determine if the player can play again
