@@ -20,9 +20,9 @@ class Director:
 
     def play_again(self):
         # TODO ask to play again, determine if the player can play again
-        play_again = input("Do you want to play again? y/n")
+        play_again = input("Do you want to play again? y/n ")
         if play_again == "y":
-            get_choice()
+            get_choice(self)
         else:
             exit()
       
