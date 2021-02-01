@@ -1,5 +1,5 @@
 import sys
-from game.dealer import Dealer
+# from game.dealer import Dealer
 
 class Director:
     '''
@@ -34,6 +34,9 @@ class Director:
         
         print(f"The score is {self.score}")
         
+        total_points = (total_points + determine_points(self, choice, card_drawn, old_card))
+                
+         
     def play_again(self):
         # TODO ask to play again, determine if the player can play again
         
