@@ -8,6 +8,7 @@ Director class
 Dealer class
     draw_card
     determine_points
+    get_last_card
 
 
 Group members:
