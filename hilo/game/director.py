@@ -12,7 +12,7 @@ class Director:
 
     def points(self, choice):
         # TODO compute points/track points
-        if choice == 'h' or choice == 'H':
+        if choice == 'h' or choice == 'H' or choice == 'l' or choice == 'L':
             self.points += 100
         else:
             self.points -= 75
