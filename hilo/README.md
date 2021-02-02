@@ -2,13 +2,16 @@
 
 Terms:
 Director class
+    start_game
+    next_card
     points
     play_again
     get_choice
 Dealer class
     draw_card
-    determine_points
     get_last_card
+    determine_points
+    
 
 
 Group members:

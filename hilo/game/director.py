@@ -13,6 +13,7 @@ class Director:
         self.score = 300      
         self.choice = ''
 
+
     def start_game(self):
         self.dealer.draw_card()
         while self.keep_playing:
@@ -21,9 +22,11 @@ class Director:
             self.points(self.choice)
             self.play_again()
     
+
     def next_card(self):
         self.dealer.draw_card()
         print(f"Next card was: {self.dealer.get_last_card()}")
+
 
     def points(self, choice):
         if choice == 'h' or choice == 'H' or choice == 'l' or choice == 'L':
@@ -47,6 +50,7 @@ class Director:
         else:
             print('Sad to see you go!')
             self.keep_playing = False
+
       
     def get_choice(self):
         self.dealer.draw_card()

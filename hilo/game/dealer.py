@@ -10,14 +10,16 @@ class Dealer:
         self.card = []
         self.num_draw = 0
     
+
     def draw_card(self):
         result = random.randint(1, 13)
         self.card.append(result)
         self.num_draw += 1
     
+
     def get_last_card(self):
-        
         return self.card[self.num_draw - 1]
+        
         
     def determine_points(self, choice):
         points_scored = 0
