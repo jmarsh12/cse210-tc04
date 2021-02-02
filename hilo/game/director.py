@@ -32,6 +32,7 @@ class Director:
             self.score -= self.dealer.determine_points(choice)
         
         print(f"The score is {self.score}")
+
                 
          
     def play_again(self):
