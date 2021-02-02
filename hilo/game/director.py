@@ -48,7 +48,7 @@ class Director:
                 print('Sad to see you go!')
                 self.keep_playing = False
         else:
-            print('Sad to see you go!')
+            print('Better luck next time!')
             self.keep_playing = False
 
       
