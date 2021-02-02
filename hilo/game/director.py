@@ -41,8 +41,10 @@ class Director:
                 self.keep_playing = True
                 print()
             else:
+                print('Sad to see you go!')
                 self.keep_playing = False
         else:
+            print('Sad to see you go!')
             self.keep_playing = False
       
     def get_choice(self):
