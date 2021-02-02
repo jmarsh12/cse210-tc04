@@ -14,7 +14,7 @@ class Dealer:
     def draw_card(self):
         result = random.randint(1, 13)
         self.card.append(result)
-        self.num_draw += 1
+        # self.num_draw += 1
     
 
     def get_last_card(self):

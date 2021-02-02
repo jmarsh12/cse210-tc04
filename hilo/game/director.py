@@ -53,7 +53,6 @@ class Director:
 
       
     def get_choice(self):
-        self.dealer.draw_card()
         print(f'The card is {self.dealer.get_last_card()}')
         condition = True
         while(condition):
