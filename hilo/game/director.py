@@ -26,20 +26,15 @@ class Director:
         print(f"Next card was: {self.dealer.get_last_card()}")
 
     def points(self, choice):
-        # TODO compute points/track points
         if choice == 'h' or choice == 'H' or choice == 'l' or choice == 'L':
             self.score += self.dealer.determine_points(choice)
         else:
             self.score -= self.dealer.determine_points(choice)
         
         print(f"The score is {self.score}")
-        
-        total_points = (total_points + determine_points(self, choice, card_drawn, old_card))
                 
          
     def play_again(self):
-        # TODO ask to play again, determine if the player can play again
-        
         if self.score > 0:
             play_again = input("Do you want to play again? [y/n]: ")
             if play_again == "y":
@@ -51,7 +46,7 @@ class Director:
             self.keep_playing = False
       
     def get_choice(self):
-        # self.dealer.draw_card()
+        self.dealer.draw_card()
         print(f'The card is {self.dealer.get_last_card()}')
         condition = True
         while(condition):
@@ -61,5 +56,3 @@ class Director:
                 return choice
             else:
                 print("Please choose an h/H or an l/L")
-        # TODO get user input 
-        # TODO figure out how to connect if the user's number is higher or lower than the card value
